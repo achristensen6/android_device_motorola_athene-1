@@ -56,7 +56,7 @@ persist.ims.volte=true
 persist.ims.vt=false
 persist.ims.vt.epdg=false
 persist.ims.rcs=false
-persist.ims.disableADBLogs=2
+persist.ims.disableADBLogs=0
 persist.ims.disableDebugLogs=0
 persist.ims.disableQXDMLogs=0
 persist.ims.disableIMSLogs=0
@@ -71,7 +71,7 @@ ro.telephony.call_ring.multiple=false
 debug.sf.hw=1
 debug.egl.hw=1
 persist.hwc.mdpcomp.enable=true
-debug.mdpcomp.logs=0
+debug.mdpcomp.logs=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 debug.enable.sglscale=1
@@ -80,7 +80,7 @@ persist.hwc.enable_vds=1
 ro.sf.lcd_density=480
 persist.hwc.ptor.enable=true
 persist.mdpcomp_perfhint=50
-persist.metadata_dynfps.disable=true
+persist.metadata_dynfps.disable=false
 
 # Data
 ro.use_data_netmgrd=true
@@ -123,10 +123,10 @@ ro.qc.sdk.audio.ssr=false
 ro.qc.sdk.audio.fluencetype=none
 tunnel.audio.encode=false
 audio.dolby.ds2.enabled=true
-audio.playback.mch.downsample=true
-voice.playback.conc.disabled=true
+audio.playback.mch.downsample=false
+voice.playback.conc.disabled=false
 voice.record.conc.disabled=false
-voice.voip.conc.disabled=true
+voice.voip.conc.disabled=false
 voice.conc.fallbackpath=deep-buffer
 audio.offload.min.duration.secs=60
 audio.offload.track.enable=true
@@ -160,7 +160,7 @@ persist.cne.logging.qxdm=0
 ro.hwui.texture_cache_size=40
 
 # Media
-mm.enable.smoothstreaming=false
+mm.enable.smoothstreaming=true
 media.stagefright.log-uri=1
 media.stagefright.use-awesome=false
 media.stagefright.enable-player=true
@@ -184,7 +184,7 @@ mm.enable.qcom_parser=4643
 vidc.enc.dcvs.extra-buff-count=2
 vidc.enc.narrow.searchrange=1
 media.camera.ts.monotonic=1
-mm.enable.sec.smoothstreaming=false
+mm.enable.sec.smoothstreaming=true
 
 # GPS
 persist.mot.gps.conf.from.sim=true
@@ -201,8 +201,8 @@ ro.fm.transmitter=false
 persist.debug.coresight.config=stm-events
 
 # Dalvik
-dalvik.vm.boot-dex2oat-threads=4
-dalvik.vm.dex2oat-threads=2
+dalvik.vm.boot-dex2oat-threads=3
+dalvik.vm.dex2oat-threads=3
 dalvik.vm.image-dex2oat-threads=4
 dalvik.vm.isa.arm.features=default
 dalvik.vm.isa.arm.variant=cortex-a53
